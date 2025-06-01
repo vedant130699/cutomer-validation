@@ -26,18 +26,6 @@ This is a Spring Boot-based web application that demonstrates form validation us
 
 To be added
 
-## 📂 Project Structure
-src/
-├── main/
-│ ├── java/com/vedant/springboot/thymeleafdemo/
-│ │ ├── controller/StudentController.java
-│ │ └── model/Student.java
-│ └── resources/
-│ ├── templates/
-│ │ ├── customer-form.html
-│ │ └── customer-confirmation.html
-│ └── application.properties
-
 
 ## 🧪 Validation Rules
 

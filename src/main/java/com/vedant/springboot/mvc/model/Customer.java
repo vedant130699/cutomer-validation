@@ -8,20 +8,23 @@ public class Customer {
     @NotNull(message = "is required")
     @Size(min = 1, message = "is required")
     private String lastName;
+
     @Min(value = 0, message = "Invalid value")
     @Max(value = 10, message = "invalid value")
-    private int freePasses;
+    @NotNull(message = "is required")
+    private Integer freePasses;
+
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 characters/digits")
     private String postalCode;
 
-    public int getFreePasses() {
+
+    public Integer getFreePasses() {
         return freePasses;
     }
 
-    public void setFreePasses(int freePasses) {
+    public void setFreePasses(Integer freePasses) {
         this.freePasses = freePasses;
     }
-
 
     public String getFirstName() {
         return firstName;

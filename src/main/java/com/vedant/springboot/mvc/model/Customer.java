@@ -1,5 +1,6 @@
 package com.vedant.springboot.mvc.model;
 
+import com.vedant.springboot.mvc.validation.CourseCode;
 import jakarta.validation.constraints.*;
 
 public class Customer {
@@ -17,7 +18,8 @@ public class Customer {
     @Pattern(regexp = "^[a-zA-Z0-9]{6}", message = "only 6 characters/digits")
     private String postalCode;
 
-
+    @CourseCode
+    private String courseCode;
     public Integer getFreePasses() {
         return freePasses;
     }
@@ -48,5 +50,13 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
